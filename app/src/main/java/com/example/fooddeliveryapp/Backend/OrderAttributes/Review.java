@@ -1,4 +1,6 @@
-package com.example.fooddeliveryapp.Backend;
+package com.example.fooddeliveryapp.Backend.OrderAttributes;
+
+import com.example.fooddeliveryapp.Backend.UserTypes.User;
 
 public class Review {
     private int id;

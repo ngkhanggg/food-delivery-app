@@ -1,4 +1,6 @@
-package com.example.fooddeliveryapp.Backend;
+package com.example.fooddeliveryapp.Backend.UserTypes;
+
+import com.example.fooddeliveryapp.Backend.Others.Address;
 
 public class User {
     private String firstName, lastName, email, password;

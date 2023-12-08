@@ -1,4 +1,4 @@
-package com.example.fooddeliveryapp.Backend;
+package com.example.fooddeliveryapp.Backend.Others;
 
 import androidx.annotation.NonNull;
 
