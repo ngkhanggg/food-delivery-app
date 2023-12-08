@@ -1,5 +1,7 @@
 package com.example.fooddeliveryapp.Backend;
 
+import androidx.annotation.NonNull;
+
 public class Address {
     private String addressLine, city, province, postalCode;
 
@@ -44,6 +46,7 @@ public class Address {
         this.postalCode = postalCode;
     }
 
+    @NonNull
     public String toString() {
         return String.format("%s, %s, %s %s", addressLine, city, province, postalCode);
     }

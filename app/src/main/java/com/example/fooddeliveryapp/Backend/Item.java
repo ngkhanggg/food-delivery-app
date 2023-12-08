@@ -1,5 +1,9 @@
 package com.example.fooddeliveryapp.Backend;
 
+import android.annotation.SuppressLint;
+
+import androidx.annotation.NonNull;
+
 public class Item {
     private String name;
     private int id;
@@ -37,6 +41,8 @@ public class Item {
         this.price = price;
     }
 
+    @NonNull
+    @SuppressLint("DefaultLocale")
     public String toString() {
         return String.format("Name: %s\nPrice: $%.2f", name, price);
     }
