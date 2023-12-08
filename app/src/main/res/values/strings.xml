@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Food DeliveryApp</string>
+    <string name="app_name">Food Delivery App</string>
+    <string name="author">\Created by: @ngkhanggg</string>
+    <string name="image_description">Image of Food</string>
+    <string name="login_button">Login</string>
+    <string name="signup_button">Sign up</string>
+    <string name="guest_button">Continue as Guest</string>
+    <string name="disclaimer">Please refrain from entering your real information since I will not be responsible for the loss of your data</string>
 </resources>
