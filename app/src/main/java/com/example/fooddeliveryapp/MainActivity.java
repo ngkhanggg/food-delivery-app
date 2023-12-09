@@ -3,6 +3,7 @@ package com.example.fooddeliveryapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.content.Intent;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onSignUpButton(View view) {
         System.out.println("Sign up button clicked");
+        Intent intent = new Intent(getApplicationContext(), UserTypes.class);
+        startActivityForResult(intent, 0);
     }
 
     public void onLoginButton(View view) {
