@@ -1,19 +1,15 @@
 package com.example.fooddeliveryapp.Backend.UserTypes;
 
-import com.example.fooddeliveryapp.Backend.Others.Address;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-public class Customer extends User {
+public class Driver extends User {
     private String firstName, lastName;
 
-    public Customer() {
+    public Driver() {
         super();
         firstName = "";
         lastName = "";
     }
 
-    public Customer(String username, String email, String password, String role) {
+    public Driver(String username, String email, String password, String role) {
         super(username, email, password, role);
         firstName = "";
         lastName = "";
