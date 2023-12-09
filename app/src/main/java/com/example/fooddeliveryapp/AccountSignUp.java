@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.fooddeliveryapp.Backend.UserTypes.*;
 import com.google.firebase.database.DatabaseReference;
@@ -36,9 +37,18 @@ public class AccountSignUp extends AppCompatActivity {
 
         if (role.equals("Customer")) {
             Customer newAccount = new Customer(str_username, str_email, str_password, role);
-            database.child("Accounts").child("Customer accounts").child(str_username).setValue(newAccount);
+            database.child("Accounts").child("Customers").child(str_username).setValue(newAccount);
+        }
+        else if (role.equals("Driver")) {
+            Driver newAccount = new Driver(str_username, str_email, str_password, role);
+            database.child("Accounts").child("Drivers").child(str_username).setValue(newAccount);
+        }
+        else {
+            Restaurant newAccount = new Restaurant(str_username, str_email, str_password, role);
+            database.child("Accounts").child("Restaurants").child(str_username).setValue(newAccount);
         }
 
+        Toast.makeText(this, "Sign up successfully", Toast.LENGTH_LONG).show();
         finish();
     }
 }
