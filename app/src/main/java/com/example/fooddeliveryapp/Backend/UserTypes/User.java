@@ -2,25 +2,19 @@ package com.example.fooddeliveryapp.Backend.UserTypes;
 
 import com.example.fooddeliveryapp.Backend.Others.Address;
 
-public class User {
-    private String firstName, lastName, email, password;
+public abstract class User {
+    private String username, firstName, lastName, email, password, role;
     private Address address;
 
     public User() {}
 
-    public User(String firstName, String lastName, String email, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public User(String username, String email, String password, String role) {
+        this.username = username;
         this.email = email;
         this.password = password;
-    }
-
-    public User(String firstName, String lastName, String email, String password, Address address) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.password = password;
-        this.address = address;
+        this.role = role;
+        this.firstName = "";
+        this.lastName = "";
     }
 
     public String getFirstName() {
@@ -31,12 +25,20 @@ public class User {
         return lastName;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
     public String getEmail() {
         return email;
     }
 
     public String getPassword() {
         return password;
+    }
+
+    public String getRole() {
+        return role;
     }
 
     public Address getAddress() {
@@ -51,12 +53,20 @@ public class User {
         this.lastName = lastName;
     }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public void setAddress(Address address) {
