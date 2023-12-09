@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserTypes">
+
+    <Button
+        android:id="@+id/button_customer"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="onCustomerClick"
+        android:text="@string/customer_button"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_driver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_driver"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="onDriverClick"
+        android:text="@string/driver_button"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_restaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_customer" />
+
+    <Button
+        android:id="@+id/button_restaurant"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="315dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="onRestaurantClick"
+        android:text="@string/restaurant_button"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_driver" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
