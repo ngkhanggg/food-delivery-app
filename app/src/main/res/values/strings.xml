@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">Food Delivery App</string>
-    <string name="author">\Created by: @ngkhanggg</string>
+    <string name="author">Created by: @ngkhanggg</string>
     <string name="image_description">Image of Food</string>
     <string name="login_button">Login</string>
     <string name="signup_button">Sign up</string>
     <string name="guest_button">Continue as Guest</string>
     <string name="disclaimer">Please refrain from entering your real information since I will not be responsible for the loss of your data</string>
+    <string name="admin_button">Admin</string>
+    <string name="driver_button">Driver</string>
+    <string name="restaurant_button">Restaurant</string>
+    <string name="customer_button">Customer</string>
+    <string name="hint_username">username</string>
+    <string name="hint_email">email</string>
+    <string name="hint_password">password</string>
 </resources>
