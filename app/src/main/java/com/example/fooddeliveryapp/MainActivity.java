@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onLoginButton(View view) {
-        System.out.println("Login button clicked");
+        Toast.makeText(this, "Login button clicked\nMethod not yet implemented", Toast.LENGTH_LONG).show();
     }
 
     public void onGuestButton(View view) {
-        System.out.println("Continue as guest button clicked");
+        Toast.makeText(this, "Continue as guest button clicked\nMethod not yet implemented", Toast.LENGTH_LONG).show();
     }
 }
